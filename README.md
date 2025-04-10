@@ -51,7 +51,31 @@ This project demonstrates how to build a modern chat application from **frontend
 
 ## Folder Structure
 
-``` chat-app/ ├── backend/ │ ├── config/ # DB and JWT config │ ├── controllers/ # Auth and Chat logic │ ├── models/ # User and Message schemas │ ├── routes/ # Express routes │ ├── socket/ # Socket.IO server handling │ ├── middlewares/ # JWT Auth, Error Handling │ └── server.js # Main backend entry │ ├── frontend/ │ ├── src/ │ │ ├── components/ # Reusable UI components │ │ ├── pages/ # Login, Chat, Register │ │ ├── services/ # API calls │ │ ├── sockets/ # Socket.IO client config │ │ └── App.js │ └── public/ │ ├── .env ├── README.md └── package.json ```
+```
+chat-app/
+├── backend/
+│   ├── config/             # DB and JWT config
+│   ├── controllers/        # Auth and Chat logic
+│   ├── models/             # User and Message schemas
+│   ├── routes/             # Express routes
+│   ├── socket/             # Socket.IO server handling
+│   ├── middlewares/        # JWT Auth, Error Handling
+│   └── server.js           # Main backend entry
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/     # Reusable UI components
+│   │   ├── pages/          # Login, Chat, Register
+│   │   ├── services/       # API calls
+│   │   ├── sockets/        # Socket.IO client config
+│   │   └── App.js
+│   └── public/
+│
+├── .env
+├── README.md
+└── package.json
+
+```
 
 ---
 
