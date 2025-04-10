@@ -1,4 +1,4 @@
-# Real-Time Chat Application
+# Real-Time Chat Service
 
 A full-stack real-time chat website built using **React**, **Node.js**, **Express**, **Socket.IO**, and **MongoDB**. This chat application allows users to create accounts, log in, and engage in real-time one-to-one conversations. It includes features like typing indicators, online presence tracking, and persistent chat history.
 
@@ -51,29 +51,7 @@ This project demonstrates how to build a modern chat application from **frontend
 
 ## 📁 Folder Structure
 
-chat-app/
-├── backend/
-│   ├── config/             # DB and JWT config
-│   ├── controllers/        # Auth and Chat logic
-│   ├── models/             # User and Message schemas
-│   ├── routes/             # Express routes
-│   ├── socket/             # Socket.IO server handling
-│   ├── middlewares/        # JWT Auth, Error Handling
-│   └── server.js           # Main backend entry
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── pages/          # Login, Chat, Register
-│   │   ├── services/       # API calls
-│   │   ├── sockets/        # Socket.IO client config
-│   │   └── App.js
-│   └── public/
-│
-├── .env
-├── README.md
-└── package.json
-
+chat-app/ ├── backend/ │ ├── config/ # DB and JWT configuration │ ├── controllers/ # Business logic for auth & messages │ ├── models/ # Mongoose schemas for User, Message │ ├── routes/ # API route handlers │ ├── socket/ # Socket.IO event handlers │ ├── middlewares/ # JWT verification middleware │ └── server.js # Entry point for backend server ├── frontend/ │ ├── public/ │ └── src/ │ ├── components/ # Chat UI, forms, message lists │ ├── pages/ # Login, Register, Chat interface │ ├── services/ # API and socket utilities │ ├── contexts/ # Auth & Socket Context Providers │ └── App.js # Route management ├── .env └── README.md
 
 ---
 
@@ -106,7 +84,7 @@ chat-app/
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/yourusername/chat-app.git
-cd chat-app
+cd Real-Time-Chat-Service
 ```
 
 ## Contribution
