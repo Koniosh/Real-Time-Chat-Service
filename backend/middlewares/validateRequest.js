@@ -1,5 +1,3 @@
-// backend/middlewares/validateRequest.js
-
 const { validationResult } = require('express-validator');
 
 exports.validateRequest = (req, res, next) => {
