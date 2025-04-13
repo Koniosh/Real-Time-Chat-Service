@@ -1,9 +1,9 @@
 
 const express = require('express');
 const router = express.Router();
-const authController = require('../controllers/authController');  // Import auth controller
-const { validateRequest } = require('../middlewares/validateRequest');  // Import request validation middleware
-const { loginValidation, registerValidation } = require('../utils/validators');  // Import validation functions
+const authController = require('../controllers/authController');  
+const { validateRequest } = require('../middlewares/validateRequest'); 
+const { loginValidation, registerValidation } = require('../utils/validators'); 
 
 // Register route
 router.post('/register', registerValidation, validateRequest, authController.register);
