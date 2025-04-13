@@ -9,18 +9,18 @@ const PORT = process.env.PORT || 9000;
 const server = http.createServer(app);
 initSocket(server);
 
-// Ensure graceful error handling in case of connection failure
+
 connectDB().catch((err) => {
   console.error('MongoDB connection failed:', err);
-  process.exit(1);  // Exit the server if DB connection fails
+  process.exit(1); 
 });
 
 initRedis()
   .catch((err) => {
     console.error('Redis connection failed:', err);
-    process.exit(1);  // Exit the server if Redis connection fails
+    process.exit(1);  
   });
 
 server.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
