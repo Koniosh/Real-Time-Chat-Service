@@ -1,7 +1,7 @@
 const { Server } = require('socket.io');
 const path = require('path');
 
-// ✅ Use absolute paths for reliability
+// Use absolute paths for reliability
 const registerChatEvents = require(path.join(__dirname, '../sockets/chatEvents'));
 const registerPresenceEvents = require(path.join(__dirname, '../sockets/presenceEvents'));
 const registerRoomEvents = require(path.join(__dirname, '../sockets/roomEvents'));
@@ -17,7 +17,7 @@ const initSocket = (server) => {
   });
 
   io.on('connection', (socket) => {
-    console.log(`🟢 New socket connected: ${socket.id}`);
+    console.log(`New socket connected: ${socket.id}`);
     
     // Attach individual event groups
     registerChatEvents(socket, io);
