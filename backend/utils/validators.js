@@ -1,8 +1,6 @@
-// backend/utils/validators.js
-
 const { body } = require('express-validator');
 
-// Registration validation
+//resister validatiom
 exports.registerValidation = [
   body('username').notEmpty().withMessage('Username is required'),
   body('email').isEmail().withMessage('Valid email is required'),
