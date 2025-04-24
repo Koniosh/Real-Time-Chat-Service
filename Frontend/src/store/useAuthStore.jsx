@@ -11,7 +11,7 @@ export const useAuthStore = create((set) => ({
      isLoggingIn: false,
      isUpdatingProfile: false,
 
-     isCheckingAuth: false,  // to check if the user is logged in or not while reload
+     isCheckingAuth: true,  // to check if the user is logged in or not while reload
 
      checkAuth: async () => {
           try {
