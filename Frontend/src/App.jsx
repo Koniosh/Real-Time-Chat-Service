@@ -3,7 +3,7 @@ import React, { use, useEffect } from 'react'
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
-import SignUpPage from './pages/SignupPage';
+import SignUpPage from './pages/SignUpPage';
 import SettingsPage from './pages/SettingsPage';
 import AppRoute from './routes/AppRoute';
 
@@ -17,6 +17,7 @@ function App() {
   const { authUser, checkAuth , isCheckingAuth} = useAuthStore();
 
   // CROS Error possible (if yes changes need to be made in the backend)
+  
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
