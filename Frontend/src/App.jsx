@@ -10,6 +10,7 @@ import AppRoute from './routes/AppRoute';
 import { useAuthStore } from './store/useAuthStore';
 
 import {Loader} from "lucide-react"
+import Navbar from './components/navbar';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
   const { authUser, checkAuth , isCheckingAuth} = useAuthStore();
 
   // CROS Error possible (if yes changes need to be made in the backend)
-  
+
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
@@ -36,6 +37,7 @@ function App() {
   return (
     <div >
       <AppRoute />
+      <Navbar/>
     </div>
   );
 }
